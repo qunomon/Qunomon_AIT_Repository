@@ -89,18 +89,18 @@ if not is_ait_launch:
 
 
 if not is_ait_launch:
-    requirements_generator.add_package('mlflow','3.1.1')
-    requirements_generator.add_package('pandas', '2.2.3')
-    requirements_generator.add_package('evaluate', '0.4.3')
-    requirements_generator.add_package('transformers', '4.53.0')
-    requirements_generator.add_package('torch', '2.7.1')
-    requirements_generator.add_package('torchvision', '0.22.1')
-    requirements_generator.add_package('torchaudio', '2.7.1')
+    requirements_generator.add_package('mlflow','3.5.1')
+    requirements_generator.add_package('pandas', '2.3.3')
+    requirements_generator.add_package('evaluate', '0.4.6')
+    requirements_generator.add_package('transformers', '4.57.1')
+    requirements_generator.add_package('torch', '2.9.0')
+    requirements_generator.add_package('torchvision', '0.24.0')
+    requirements_generator.add_package('torchaudio', '2.9.0')
 
 
 # #### #3-3 [uneditable]
 
-# In[5]:
+# In[ ]:
 
 
 if not is_ait_launch:
@@ -114,7 +114,7 @@ if not is_ait_launch:
 
 # #### #4-1 [required]
 
-# In[6]:
+# In[ ]:
 
 
 # import if you need modules cell
@@ -129,7 +129,7 @@ import torch
 
 # #### #4-2 [uneditable]
 
-# In[7]:
+# In[ ]:
 
 
 # must use modules
@@ -148,7 +148,7 @@ from ait_sdk.develop.annotation import measures, resources, downloads, ait_main 
 
 # [required]
 
-# In[8]:
+# In[ ]:
 
 
 if not is_ait_launch:
@@ -192,7 +192,7 @@ if not is_ait_launch:
 
 # [required]
 
-# In[9]:
+# In[ ]:
 
 
 if not is_ait_launch:
@@ -209,7 +209,7 @@ if not is_ait_launch:
 
 # [uneditable]
 
-# In[10]:
+# In[ ]:
 
 
 logger = get_logger()
@@ -239,7 +239,7 @@ ait_manifest.read_json(path_helper.get_manifest_file_path())
 
 # [required]
 
-# In[11]:
+# In[ ]:
 
 
 @log(logger)
@@ -248,7 +248,7 @@ def mean_bleu(mean_bleu):
     return mean_bleu
 
 
-# In[12]:
+# In[ ]:
 
 
 @log(logger)
@@ -257,7 +257,7 @@ def save_sample_data_csv(df, file_path: str=None) -> None:
     df.to_csv(file_path)
 
 
-# In[13]:
+# In[ ]:
 
 
 @log(logger)
@@ -266,7 +266,7 @@ def eval_result(eval_table, file_path: str=None) -> str:
     eval_table.to_csv(file_path, index=False)
 
 
-# In[14]:
+# In[ ]:
 
 
 @log(logger)
@@ -279,7 +279,7 @@ def move_log(file_path: str=None) -> str:
 
 # [required]
 
-# In[15]:
+# In[ ]:
 
 
 @log(logger)
@@ -369,7 +369,7 @@ def main() -> None:
 
 # [uneditable]
 
-# In[16]:
+# In[ ]:
 
 
 if __name__ == '__main__':
