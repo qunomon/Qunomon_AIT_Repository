@@ -38,7 +38,7 @@
 
 # [uneditable]
 
-# In[1]:
+# In[ ]:
 
 
 # Determine whether to start AIT or jupyter by startup argument
@@ -89,13 +89,13 @@ if not is_ait_launch:
 
 
 if not is_ait_launch:
-    requirements_generator.add_package('mlflow','3.5.1')
+    requirements_generator.add_package('mlflow','3.1.1')
     requirements_generator.add_package('pandas', '2.3.3')
     requirements_generator.add_package('evaluate', '0.4.6')
     requirements_generator.add_package('transformers', '4.57.1')
-    requirements_generator.add_package('torch', '2.9.0')
-    requirements_generator.add_package('torchvision', '0.24.0')
-    requirements_generator.add_package('torchaudio', '2.9.0')
+    requirements_generator.add_package('torch', '2.7.1')
+    requirements_generator.add_package('torchvision', '0.22.1')
+    requirements_generator.add_package('torchaudio', '2.7.1')
 
 
 # #### #3-3 [uneditable]
