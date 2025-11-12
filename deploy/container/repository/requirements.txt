@@ -1,8 +1,8 @@
-mlflow==3.5.1
+mlflow==3.1.1
 pandas==2.3.3
 evaluate==0.4.6
 transformers==4.57.1
-torch==2.9.0
-torchvision==0.24.0
-torchaudio==2.9.0
+torch==2.7.1
+torchvision==0.22.1
+torchaudio==2.7.1
 ./ait_sdk-0.1.24-py3-none-any.whl
