@@ -89,20 +89,20 @@ if not is_ait_launch:
 
 
 if not is_ait_launch:
-    requirements_generator.add_package('mlflow', '2.18.0')
-    requirements_generator.add_package('pandas', '2.2.3')
-    requirements_generator.add_package('evaluate', '0.4.3')
-    requirements_generator.add_package('ipywidgets', '8.1.5')
-    requirements_generator.add_package('transformers', '4.52.1')
-    requirements_generator.add_package('torch', '2.7.0')
-    requirements_generator.add_package('torchvision', '0.22.0')
-    requirements_generator.add_package('torchaudio', '2.7.0')
+    requirements_generator.add_package('mlflow', '3.1.4')
+    requirements_generator.add_package('pandas', '2.3.3')
+    requirements_generator.add_package('evaluate', '0.4.6')
+    requirements_generator.add_package('ipywidgets', '8.1.7')
+    requirements_generator.add_package('transformers', '4.57.1')
+    requirements_generator.add_package('torch', '2.8.0')
+    requirements_generator.add_package('torchvision', '0.23.0')
+    requirements_generator.add_package('torchaudio', '2.8.0')
     requirements_generator.add_package('rouge-score', '0.1.2')
 
 
 # #### #3-3 [uneditable]
 
-# In[5]:
+# In[ ]:
 
 
 if not is_ait_launch:
@@ -116,7 +116,7 @@ if not is_ait_launch:
 
 # #### #4-1 [required]
 
-# In[6]:
+# In[ ]:
 
 
 # import if you need modules cell
@@ -135,7 +135,7 @@ import numpy as np
 
 # #### #4-2 [uneditable]
 
-# In[7]:
+# In[ ]:
 
 
 # must use modules
@@ -154,7 +154,7 @@ from ait_sdk.develop.annotation import measures, resources, downloads, ait_main 
 
 # [required]
 
-# In[8]:
+# In[ ]:
 
 
 if not is_ait_launch:
@@ -218,7 +218,7 @@ if not is_ait_launch:
 
 # [required]
 
-# In[9]:
+# In[ ]:
 
 
 if not is_ait_launch:
@@ -235,7 +235,7 @@ if not is_ait_launch:
 
 # [uneditable]
 
-# In[10]:
+# In[ ]:
 
 
 logger = get_logger()
@@ -265,7 +265,7 @@ ait_manifest.read_json(path_helper.get_manifest_file_path())
 
 # [required]
 
-# In[11]:
+# In[ ]:
 
 
 @log(logger)
@@ -294,7 +294,7 @@ def mean_rougeS(mean_rouge):
     return mean_rouge
 
 
-# In[12]:
+# In[ ]:
 
 
 @log(logger)
@@ -303,7 +303,7 @@ def rouge_score_table(df, file_path: str=None) -> None:
     df.to_csv(file_path)
 
 
-# In[13]:
+# In[ ]:
 
 
 @log(logger)
@@ -365,7 +365,7 @@ def rouge_s_fn(predictions, targets):
     return MetricValue(scores=scores, aggregate_results=standard_aggregations(scores))
 
 
-# In[14]:
+# In[ ]:
 
 
 @log(logger)
@@ -374,7 +374,7 @@ def eval_result(eval_table, file_path: str=None) -> str:
     eval_table.to_csv(file_path, index=False)
 
 
-# In[15]:
+# In[ ]:
 
 
 @log(logger)
@@ -387,7 +387,7 @@ def move_log(file_path: str=None) -> str:
 
 # [required]
 
-# In[16]:
+# In[ ]:
 
 
 @log(logger)
@@ -474,7 +474,7 @@ def main() -> None:
 
 # [uneditable]
 
-# In[17]:
+# In[ ]:
 
 
 if __name__ == '__main__':
@@ -509,4 +509,10 @@ if not is_ait_launch:
     # output License.txt
     license_generator = LicenseGenerator()
     license_generator.write('../top_dir/LICENSE.txt', ait_creation_year, ait_owner)
+
+
+# In[ ]:
+
+
+
 
