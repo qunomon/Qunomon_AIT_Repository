@@ -2,7 +2,7 @@
   "name": "eval_model_yolo_detect_robustness",
   "description": "YOLOの物体検出モデルに対しL∞/L2制約のもとで敵対的摂動を適用し、その影響を測定・評価する。摂動量ごとの敵対攻撃によってモデルの精度(mAP)の低下率と未検出(FNR)の増加率を算出し、推移を可視化することで攻撃に対するモデルの脆弱性を明らかにする。攻撃手法はDPatchを使用する。 \\n \\begin{align}mAP_{drop}=(1-\\frac{mAP_{adv}}{mAP_{org}})*100\\end{align} \\n \\begin{align}FNR_{increase}=( \\frac{FNR_{adv}}{FNR_{org}}-1)*100\\end{align}\\n※注意：処理対象の画像が200枚を超えると実行できない場合があります。\\n 実行環境（参考）\\n - ホストマシンの仕様：\\n     - プロセッサ：11th Gen Intel(R) Core(TM) i7-11800H @ 2.3GHz\\n     - 実装RAM：32.0GB(31.7 GB使用可能)\\n - Dockerの実行環境(docker stats 出力一部)：\\n     - メモリの使用量 ：13.08GiB / 15.62GiB\\n     - CPU 使用率：778.49%\\nこの環境では画像が200枚を超えると処理不可が大きくなり、メモリ不足またはCPU過負荷により実行できませんでした。処理枚数を減らすか、よりリソースの多い環境での実行を推奨します。",
   "source_repository": "https://github.com/aistairc/Qunomon_AIT_Repository/tree/eval_model_yolo_detect_robustness",
-  "version": "1.2",
+  "version": "1.3",
   "quality": "https://ait-hub.pj.aist.go.jp/ait-hub/api/0.0.1/qualityDimensions/機械学習品質マネジメントガイドライン第三版/C-2機械学習モデルの安定性",
   "keywords": [
     "yolo",
