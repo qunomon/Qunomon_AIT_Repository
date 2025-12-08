@@ -1,10 +1,10 @@
-pandas==2.2.3
+pandas==2.3.3
 numpy==2.0.2
-torch==2.6.0
-h5py==3.12.1
+torch==2.9.0
+h5py==3.15.1
 matplotlib==3.9.4
-opencv-python-headless==4.11.0.86
-ultralytics==8.3.89
-torchmetrics==1.6.2
-pycocotools==2.0.8
+opencv-python-headless==4.12.0.88
+ultralytics==8.3.221
+torchmetrics==1.8.2
+pycocotools== 2.0.10
 ./ait_sdk-0.1.24-py3-none-any.whl
